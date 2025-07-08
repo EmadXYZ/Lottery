@@ -13,3 +13,17 @@ docs/
 # Dotenv file
 .env
 
+# Ignore GitHub workflows (optional)
+.github/workflows/
+
+# Ignore broadcast outputs
+broadcast/Interactions.s.sol/11155111/
+
+# Ignore coverage report
+coverage.txt
+
+# Ignore foundry dependencies
+lib/
+
+# Ignore git submodules file (only if not used)
+.gitmodules

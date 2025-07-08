@@ -15,12 +15,12 @@ A secure, autonomous, and transparent lottery smart contract built with Solidity
 ---
 
 ## ✨ Key Features
-✅ **Verifiable Randomness**: Utilizes Chainlink VRF v2.5 to ensure winner selection is truly random and unbiasable.  
-✅ **Automated Operations**: Integrates with Chainlink Automation to automatically check for eligible lottery conditions and trigger winner selection.  
-✅ **Minimum Entrance Fee**: Requires participants to pay a defined `entranceFee` to enter the raffle.  
-✅ **Time-Based Intervals**: Operates on a predefined time interval, ensuring regular winner draws.  
-✅ **Robust Error Handling**: Employs custom errors for gas efficiency and clear feedback (`Raffle__SendMoreToEnterRaffle`, `Raffle__RaffleNotOpen`, `Raffle__UpkeepNotNeeded`, `Raffle__TransferFailed`).  
-✅ **Transparent State Management**: Uses `RaffleState` enum (OPEN, CALCULATING) for clear visibility of the lottery’s current status.  
+- ✅ **Verifiable Randomness**: Utilizes Chainlink VRF v2.5 to ensure winner selection is truly random and unbiasable.  
+- ✅ **Automated Operations**: Integrates with Chainlink Automation to automatically check for eligible lottery conditions and trigger winner selection.  
+- ✅ **Minimum Entrance Fee**: Requires participants to pay a defined `entranceFee` to enter the raffle.  
+- ✅ **Time-Based Intervals**: Operates on a predefined time interval, ensuring regular winner draws.  
+- ✅ **Robust Error Handling**: Employs custom errors for gas efficiency and clear feedback (`Raffle__SendMoreToEnterRaffle`, `Raffle__RaffleNotOpen`, `Raffle__UpkeepNotNeeded`, `Raffle__TransferFailed`).  
+- ✅ **Transparent State Management**: Uses `RaffleState` enum (OPEN, CALCULATING) for clear visibility of the lottery’s current status.  
 
 ## 🧠 Contract Architecture
 ```
@@ -46,10 +46,10 @@ A secure, autonomous, and transparent lottery smart contract built with Solidity
 - **test/unit/RaffleTest.t.sol**: Extensive unit tests covering edge cases and Chainlink integrations.  
 
 ## 🛡️ Security Considerations
-🔒 **Chainlink VRF**: Ensures cryptographically secure and tamper-proof randomness.  
-⏰ **Chainlink Automation**: Prevents unnecessary gas consumption by checking conditions before performing upkeep.  
-🚨 **Custom Errors**: Gas-optimized error handling for better efficiency.  
-🚫 **Re-entrancy Protection**: Follows best practices during winner payouts to prevent attacks.  
+- 🔒 **Chainlink VRF**: Ensures cryptographically secure and tamper-proof randomness.  
+- ⏰ **Chainlink Automation**: Prevents unnecessary gas consumption by checking conditions before performing upkeep.  
+- 🚨 **Custom Errors**: Gas-optimized error handling for better efficiency.  
++ 🚫 **Re-entrancy Protection**: Follows best practices during winner payouts to prevent attacks.  
 
 ## 📄 License
 This project is licensed under the MIT License.  
